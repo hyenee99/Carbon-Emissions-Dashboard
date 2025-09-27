@@ -39,8 +39,8 @@ export default function EmissionChart({ data }: chartProps) {
   );
 
   return (
-    <div className="w-full h-75">
-      <ResponsiveContainer width="100%" height="100%">
+    <div className="w-full flex mb-3 gap-4">
+      <ResponsiveContainer width="70%" height={300}>
         <LineChart data={data}>
           <XAxis dataKey="yearMonth" style={{ fontSize: "0.8rem" }} />
           <YAxis style={{ fontSize: "0.7rem" }} />
@@ -69,7 +69,7 @@ export default function EmissionChart({ data }: chartProps) {
           />{" "}
         </LineChart>
       </ResponsiveContainer>
-      <div>
+      <div className="w-[30%]">
         <h1 className="text-xl mb-2 text-[#1BAD70]">✍🏻 Posts</h1>
         {detail ? (
           <div className="flex flex-col gap-2">

@@ -45,3 +45,11 @@ h1 {
   font-family:'Paperozi';
   font-weight: 800;
 }
+
+.table-cell {
+  @apply border border-gray-300 px-3 py-1.5;
+}
+
+.table-header {
+  @apply border border-gray-300 px-3 py-1.5 font-semibold bg-gray-100;
+}
