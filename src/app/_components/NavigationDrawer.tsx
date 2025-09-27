@@ -12,9 +12,9 @@ export default function NavigationDrawer() {
 
   return (
     <nav className="h-full p-3 bg-[#F6F6F6] rounded-tr-md rounded-br-md">
-      <p className="font-semibold text-xl mb-4 text-[#1BAD70]">
+      <h1 className="font-semibold text-xl mb-4 text-[#1BAD70]">
         🌍 Emission Tracker
-      </p>
+      </h1>
       <ul className=" flex flex-col gap-1">
         {navItems.map((item) => {
           const isActive = pathname === item.href;
