@@ -8,6 +8,7 @@ export type Company = {
 export type Country = {
   code: string;
   name: string;
+  tax: number;
 };
 
 export type GhgEmission = {
