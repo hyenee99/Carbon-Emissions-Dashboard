@@ -5,6 +5,11 @@ export type Company = {
   emissions: GhgEmission[];
 };
 
+export type Country = {
+  code: string;
+  name: string;
+};
+
 export type GhgEmission = {
   yearMonth: string; // "2025-01", "2025-02", "2025-03"
   source: string; // gasoline, lpg, diesel, etc
