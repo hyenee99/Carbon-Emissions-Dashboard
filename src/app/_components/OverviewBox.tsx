@@ -19,7 +19,7 @@ export default function OverviewBox({ company, emissions }: boxProps) {
   return (
     <div
       onClick={handleBoxClick}
-      className="flex justify-between w-full h-14 border-b border-gray-300 items-center cursor-pointer hover:bg-gray-100"
+      className="p-2 flex justify-between w-full h-14 border-b border-gray-300 items-center cursor-pointer hover:bg-gray-100"
     >
       <p className="w-[30%] ">{company.name}</p>
       <p className="w-[30%] ">{company.country}</p>

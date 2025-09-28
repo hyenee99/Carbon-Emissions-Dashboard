@@ -33,7 +33,7 @@ export default function Dashboard() {
   }, []);
 
   // 받아온 companies 데이터 중에 선택한 회사의 id 와 같은 회사 찾기
-  const company = companies.find((c) => c.id === selectedCompany.id);
+  const company = companies.find((c) => c.id === selectedCompany?.id);
   const chartData = company ? company.emissions : [];
   const sumOfEmissions = chartData.reduce(
     (acc, item) => acc + item.emissions,
@@ -47,7 +47,7 @@ export default function Dashboard() {
       <div className="text-xl flex flex-col gap-3 mb-5">
         <p>Hello!🤚🏻 </p>
         <p>
-          View <span className="font-semibold">{selectedCompany.name}</span> 's
+          View <span className="font-semibold">{selectedCompany?.name}</span> 's
           carbon emissions at a glance!
         </p>
       </div>

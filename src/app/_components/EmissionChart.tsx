@@ -35,7 +35,7 @@ export default function EmissionChart({ data }: chartProps) {
   }, []);
 
   const companyPost = posts.filter(
-    (post) => post.resourceUid === selectedCompany.id
+    (post) => post.resourceUid === selectedCompany?.id
   );
 
   return (

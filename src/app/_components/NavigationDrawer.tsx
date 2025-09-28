@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function NavigationDrawer() {
   const navItems = [
@@ -9,10 +9,17 @@ export default function NavigationDrawer() {
     { name: "Reports", href: "/reports" },
   ];
   const pathname = usePathname();
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/");
+  };
 
   return (
     <nav className="h-full p-3 bg-[#F6F6F6] rounded-tr-md rounded-br-md">
-      <h1 className="font-semibold text-xl mb-4 text-[#1BAD70]">
+      <h1
+        className="font-semibold text-xl mb-4 text-[#1BAD70] cursor-pointer"
+        onClick={handleClick}
+      >
         🌍 Emission Tracker
       </h1>
       <ul className=" flex flex-col gap-1">
